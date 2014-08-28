@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Dimz" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="80px" height="80px" viewBox="0 0 80 80" enable-background="new 0 0 80 80" xml:space="preserve">
+<g>
+	
+		<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="369.6147" y1="158.9136" x2="296.0172" y2="171.0472" gradientTransform="matrix(-0.7071 0.7071 -0.7071 -0.7071 394.2332 -81.8213)">
+		<stop  offset="0" style="stop-color:#FF6A15"/>
+		<stop  offset="1" style="stop-color:#BD4664"/>
+	</linearGradient>
+	<polygon opacity="0.5" fill="url(#SVGID_1_)" enable-background="new    " points="20,80 80,20 60,0 0,60 	"/>
+	
+		<linearGradient id="SVGID_2_" gradientUnits="userSpaceOnUse" x1="128.7516" y1="-1.123" x2="213.5467" y2="-1.123" gradientTransform="matrix(0.7071 0.7071 0.7071 -0.7071 -80.2332 -81.8213)">
+		<stop  offset="0" style="stop-color:#FF6A15"/>
+		<stop  offset="1" style="stop-color:#BD4664"/>
+	</linearGradient>
+	<polygon opacity="0.7" fill="url(#SVGID_2_)" enable-background="new    " points="60,80 0,20 20,0 80,60 	"/>
+</g>
+</svg>

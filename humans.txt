@@ -1,0 +1,18 @@
+/* TEAM */
+
+	UI developer: Johan le Roch
+	Twitter: @johanleroch
+	From: Nantes, Pays de Loire, France
+
+/* THANKS */
+
+	Graphics: Dimz Concept
+	Twitter: @DimzConcept
+	From: Brest, Britany, France
+
+
+/* SITE */
+	Last update:2014/09/15
+	Language: English
+	Doctype:HTML5
+	IDE: Sublime Text,CodeKit
