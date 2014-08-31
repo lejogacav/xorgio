@@ -628,4 +628,37 @@ h1 {
   height: 200%;
 }
 
+#about h2 > a {
+  height: auto;
+  font-family: 'Intro';
+  color: white;
+  margin-bottom: 1.5em;
+}
+#about h2 > a:hover {
+  text-decoration: none;
+}
+#about address {
+  color: #65737d;
+  font-family: 'OpenSans-Semibold';
+  font-size: 14px;
+  font-style: normal;
+}
+#about nav > * {
+  display: inline;
+  list-style: none;
+  margin: 10px;
+}
+#about nav #facebook {
+  background-color: red;
+}
+#about nav #twitter {
+  background-color: blue;
+}
+#about nav #google {
+  background-color: green;
+}
+#about nav #linkedin {
+  background-color: yellow;
+}
+
 /* ##################### XXXXXXXX ##################### */

@@ -14,6 +14,7 @@ $icon-hover-color: #ff6a15;
 $icon-unactive-color: #65737d;
 $icon-color: #fcfcfc;
 $text-color: #fcfcfc;
+$text-color-blue: #65737d;
 
 $gradient-color1: #ff6a15;
 $gradient-color2: #bd4664;
@@ -301,6 +302,52 @@ h1 {
 			transform: rotate(45deg) scale(0.85) translate(-42%, 21%);
 			height: 200%;
 		}		
+	}
+}
+
+#about{
+	h2 > a{
+		height: auto;
+		font-family: 'Intro';
+		color: white;
+		margin-bottom: 1.5em;
+
+		&:hover{
+			text-decoration: none;
+		}
+	}
+	address{
+		color: $text-color-blue;
+		font-family: 'OpenSans-Semibold';
+		font-size: 14px;
+		font-style: normal;
+	}
+
+	nav{
+		> *{
+			// text-indent: -9999px;
+		    display: inline;
+		    list-style: none;
+		    margin: 10px;
+		}
+
+		#facebook{
+			background-color: red;
+		}
+
+		#twitter{
+			background-color: blue;
+
+		}
+
+		#google{
+			background-color: green;
+
+		}
+
+		#linkedin{
+			background-color: yellow;
+		}
 	}
 }
 
