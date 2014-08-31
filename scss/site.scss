@@ -93,7 +93,6 @@ body{
 			fill: $icon-color;
 			text-align: center;
 			position: relative;
-			// z-index: 3;
 
 			&:hover{
 				fill: $icon-hover-color;
@@ -115,7 +114,7 @@ body{
 				position: absolute;
 				top: 0%;
 				left: -160%;
-				padding: 30px 32px 30px 32px;
+				padding: 26px 32px 26px 32px;
 				white-space: nowrap;
 				font-family: "OpenSans-Semibold";
 				font-size: 20px;
@@ -299,7 +298,6 @@ h1 {
 		display: inline-block;
 
 		img{
-			// transform: rotate(45deg) scale(0.8) translate(-44%, 21%);
 			transform: rotate(45deg) scale(0.85) translate(-42%, 21%);
 			height: 200%;
 		}		
