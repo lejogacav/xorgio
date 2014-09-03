@@ -134,46 +134,58 @@
 		</nav>
 		
 		<header role="banner">
-			<img src="pictos/Logo-Jo-01.svg" alt="Logo Xorg.io">
-			<h1>Xorg, a french <em>front-end developer</em></h1>
-			<a href="#about" class="sectionBtn">About me</a>
+			<div class="slide">
+				<div class="wrapper">
+					<div class="content">
+						<img src="pictos/Logo-Jo-01.svg" alt="Logo Xorg.io">
+						<h1>Xorg, a french <em>front-end developer</em></h1>
+						<a href="#about" class="sectionBtn">About me</a>					
+					</div>
+				</div>				
+			</div>
 		</header>
 		<main role="main">
 			<div id="person" itemscope itemtype="http://schema.org/Person">
 							
 				<section id="about">
-					<div class="photo">
-						<div class="cadre">
-							<img src="../img/photo.jpg" alt="">							
-						</div>
-						<div class="gradiant">
-						</div>
+					<div class="slide">
+						<div class="wrapper">
+							<div class="content">
+								<div class="photo">
+									<div class="cadre">
+										<img src="../img/photo.jpg" alt="">							
+									</div>
+									<div class="gradiant">
+									</div>
+								</div>
+								<h2><a itemprop="url" href="http://xorg.io/"><span itemprop="name"></span>Johan le Roch</a></h2>
+								<meta itemprop="jobtitle" content="Front-end developer">
+									
+								<address itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+									<meta itemprop="postalCode" content="44100">
+									<span itemprop="addressLocality">Nantes</span>, 
+									<meta itemprop="addressRegion" content="Pays de la loire">
+									<span itemprop="addressCountry">France</span>
+								</address>
+								
+								<!-- <div itemprop="email">johanleroch@gmail.com</div>
+								<div itemprop="telephone">0695969810</div> -->
+
+								<nav role="navigation">
+									<ul>
+										<li class="facebook">Facebook</li>
+										<li class="twitter">Twitter</li>
+										<li class="google">Google+</li>
+										<li class="linkedin">LinkedIn</li>
+									</ul>
+								</nav>
+
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum ea eius ipsum quaerat a praesentium repudiandae ipsam sed laborum voluptatum.</p>
+
+								<a href="#experience" class="sectionBtn">My experience</a>												
+							</div>
+						</div>				
 					</div>
-					<h2><a itemprop="url" href="http://xorg.io/"><span itemprop="name"></span>Johan le Roch</a></h2>
-					<meta itemprop="jobtitle" content="Front-end developer">
-						
-					<address itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
-						<meta itemprop="postalCode" content="44100">
-						<span itemprop="addressLocality">Nantes</span>, 
-						<meta itemprop="addressRegion" content="Pays de la loire">
-						<span itemprop="addressCountry">France</span>
-					</address>
-					
-					<!-- <div itemprop="email">johanleroch@gmail.com</div>
-					<div itemprop="telephone">0695969810</div> -->
-
-					<nav role="navigation">
-						<ul>
-							<li class="facebook">Facebook</li>
-							<li class="twitter">Twitter</li>
-							<li class="google">Google+</li>
-							<li class="linkedin">LinkedIn</li>
-						</ul>
-					</nav>
-
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum ea eius ipsum quaerat a praesentium repudiandae ipsam sed laborum voluptatum.</p>
-
-					<a href="#experience" class="sectionBtn">My experience</a>
 
 				</section>
 
@@ -267,8 +279,8 @@
 		<script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
 		<script src="scripts/jquery.fittext.js"></script>
 		<script>
-			jQuery("header h1").fitText(1.2, { maxFontSize: '50px' });
-			jQuery("#about h2").fitText(1.2, { maxFontSize: '30px' });
+			jQuery("header h1").fitText(1.0, { maxFontSize: '50px' });
+			jQuery("#about h2").fitText(1.0, { maxFontSize: '30px' });
 			// jQuery("sectionBtn").fitText(1.2, { maxFontSize: '1.25em' });
 		</script>
 		<script>/* Statistiques Google */
