@@ -432,6 +432,11 @@ body {
   line-height: 800px;
   background: url("../pictos/Logo-Jo-80x80.svg") no-repeat;
   transform: scale(0.4);
+  transition: transform 0.3s linear;
+}
+.sideMenu a[rel="home"]:hover {
+  transform: scale(0.4) rotate(-90deg);
+  transition: transform 0.3s linear;
 }
 .sideMenu .menu {
   position: absolute;
@@ -540,6 +545,7 @@ header h1 em {
 }
 
 .svg .sectionBtn::after, .no-svg .sectionBtn::after {
+  transition: transform 0.2s linear;
   content: '';
   background-position: -50px -180px;
   display: inline-block;
@@ -552,6 +558,7 @@ header h1 em {
 
 .sectionBtn:hover, .sectionBtn:focus {
   background-color: #ff6a15;
+  transition: background 0.2s linear;
   text-decoration: none;
   color: white;
 }
@@ -559,10 +566,12 @@ header h1 em {
 .sectionBtn:hover::after, .sectionBtn:focus::after {
   background-position: 0 -240px;
   top: 7px;
+  color: #000;
 }
 
 /* #################### XXXX #################### */
 .sectionBtn {
+  transition: background 0.2s linear;
   text-align: center;
   padding: 1.1875em 2.3125em;
   background-color: #000;

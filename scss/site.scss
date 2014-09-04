@@ -69,6 +69,12 @@ body{
 		line-height: 800px;
 		background: url('../pictos/Logo-Jo-80x80.svg') no-repeat;
 		transform: scale(.40);
+		transition: transform 0.3s linear;
+
+		&:hover{
+			transform: scale(.40) rotate(-90deg);
+			transition: transform 0.3s linear;
+		}
 	}
 
 	.menu{
@@ -192,6 +198,8 @@ header{
 }
 
 .svg .sectionBtn::after, .no-svg .sectionBtn::after {
+
+	transition: transform 0.2s linear;
 	content: '';
 	background-position: -50px -180px;
 	display: inline-block;
@@ -205,6 +213,7 @@ header{
 
 .sectionBtn:hover, .sectionBtn:focus {
 	background-color: $button-bgc-hover;
+	transition: background 0.2s linear;
 	text-decoration: none;
 	color: white;
 }
@@ -212,11 +221,13 @@ header{
 .sectionBtn:hover::after, .sectionBtn:focus::after {
 	background-position: 0 -240px;
 	top: 7px;
+	color: #000;
 }
 
 /* #################### XXXX #################### */
 
 .sectionBtn{
+	transition: background 0.2s linear;
 	text-align: center;
 	padding: 1.1875em 2.3125em;
 	background-color: #000;
@@ -325,6 +336,10 @@ h1 {
 		font-family: 'OpenSans-Semibold';
 		font-size: 14px;
 		font-style: normal;
+
+		span[itemprop="addressLocality"]{
+			
+		}
 	}
 
 	nav{
