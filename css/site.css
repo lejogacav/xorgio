@@ -402,6 +402,13 @@ th {
   font-style: normal;
 }
 @font-face {
+  font-family: 'OpenSans-Light';
+  src: url("../Fonts/opensans-light-webfont.eot");
+  src: url("../Fonts/opensans-light-webfont.eot?#iefix") format("embedded-opentype"), url("../Fonts/opensans-light-webfont.woff") format("woff"), url("../Fonts/opensans-light-webfont.ttf") format("truetype"), url("../Fonts/opensans-light-webfont.svg#open_sanslight") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
   font-family: 'Intro';
   src: url("../Fonts/intro-webfont.eot");
   src: url("../Fonts/intro-webfont.eot?#iefix") format("embedded-opentype"), url("../Fonts/intro-webfont.woff") format("woff"), url("../Fonts/intro-webfont.ttf") format("truetype");
@@ -663,22 +670,61 @@ h1 {
   font-size: 14px;
   font-style: normal;
 }
-#about nav > * {
-  display: inline;
+#about nav ul {
+  padding: 0;
+  height: 50px;
+  position: relative;
+  left: 50%;
+  margin-left: -106px;
+}
+#about nav li {
+  margin-left: 5px;
+  margin-top: 5px;
   list-style: none;
-  margin: 10px;
+  float: left;
+  text-indent: -9999px;
+  height: 40px;
+  width: 40px;
+  transition: transform 2s linear;
+  background-repeat: no-repeat;
+  width: 50px;
 }
-#about nav #facebook {
-  background-color: red;
+#about nav li:hover {
+  margin: 0;
+  margin-right: 5px;
+  cursor: pointer;
+  height: 50px;
+  width: 50px;
+  transition: height 0.1s ease-in-out;
 }
-#about nav #twitter {
-  background-color: blue;
+#about nav .facebook {
+  background-image: url(../pictos/Pictos_Jo_Facebook.svg);
 }
-#about nav #google {
-  background-color: green;
+#about nav .facebook:hover {
+  background-image: url(../pictos/Pictos_Jo_Facebook_gradiant.svg);
 }
-#about nav #linkedin {
-  background-color: yellow;
+#about nav .twitter {
+  background-image: url(../pictos/Pictos_Jo_Twitter.svg);
+}
+#about nav .twitter:hover {
+  background-image: url(../pictos/Pictos_Jo_Twitter_gradiant.svg);
+}
+#about nav .google {
+  background-image: url(../pictos/Pictos_Jo_GooglePlus.svg);
+}
+#about nav .google:hover {
+  background-image: url(../pictos/Pictos_Jo_GooglePlus_gradiant.svg);
+}
+#about nav .linkedin {
+  background-image: url(../pictos/Pictos_Jo_Linkedin.svg);
+}
+#about nav .linkedin:hover {
+  background-image: url(../pictos/Pictos_Jo_Linkedin_gradiant.svg);
+}
+#about p {
+  font-family: 'OpenSans-Light';
+  color: #fff;
+  font-size: 16px;
 }
 
 /* ##################### XXXXXXXX ##################### */
