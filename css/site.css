@@ -772,6 +772,9 @@ h1 {
   font-size: 18px;
   margin: 0;
 }
+#experience .line {
+  margin-bottom: 50px;
+}
 #experience .detail {
   float: left;
   margin-top: 30px;
