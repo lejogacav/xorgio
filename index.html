@@ -37,7 +37,7 @@
 		<nav class="sideMenu" role="navigation">			 
 			<a rel="home" href="#home">home</a>
 			<ul class="menu">
-				<li class="btn aboutme">				
+				<li onclick="location.href='#about';" class="btn aboutme">				
 						<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 						width="100px" height="100px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
 							<g>
@@ -64,7 +64,7 @@
 							About me
 						</div>
 				</li>
-				<li class="btn xp">
+				<li onclick="location.href='#experience';" class="btn xp">
 					<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 						 width="100px" height="100px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
 					<g>
@@ -83,7 +83,7 @@
 						My experience
 					</div>
 				</li>
-				<li class="btn skill">
+				<li onclick="location.href='#skills';" class="btn skill">
 					<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 						 width="100px" height="100px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
 					<g>
@@ -111,7 +111,7 @@
 						My skills
 					</div>
 				</li>
-				<li class="btn message">
+				<li onclick="location.href='#contact';" class="btn message">
 					<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 						 width="100px" height="100px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
 					<g>
@@ -163,9 +163,14 @@
 									
 								<address itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
 									<meta itemprop="postalCode" content="44100">
-									<span itemprop="addressLocality" id="ville">Nantes</span>, 
+									<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+										 height="16px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
+									<path d="M50,0C29.29,0,12.5,16.789,12.5,37.5C12.5,70,50,100,50,100s37.5-30,37.5-62.5C87.5,16.789,70.71,0,50,0z M50,56.25
+										c-10.356,0-18.75-8.394-18.75-18.75S39.644,18.75,50,18.75s18.75,8.394,18.75,18.75S60.356,56.25,50,56.25z" fill="#65737d"/>
+									</svg>
+									<span itemprop="addressLocality" id="ville">Nantes</span> 
 									<meta itemprop="addressRegion" content="Pays de la loire">
-									<span itemprop="addressCountry">France</span>
+									<span itemprop="addressCountry">, France</span>
 								</address>
 								
 								<!-- <div itemprop="email">johanleroch@gmail.com</div>
@@ -190,25 +195,42 @@
 				</section>
 
 				<section id="experience" itemprop="description">
-					<div>
-						<h3>Master's degree, Software Architect</h3>
-						<p><span>2013-2015</span> ENI Ecole Informatique</p>
-					</div>
-					<div>
-						<h3>Master of Science (MSc), IT design and development</h3>
-						<p><span>2011-2013</span> ENI Ecole Informatique</p>
-					</div>
-					<div>
-						<h3>Bachelor of Applied Science (BASc), Design and Conception of Applications</h3>
-						<p><span>2010-2011</span> Université de Bretagne Occidentale</p>
-					</div>
-					<div>
-						<h3>BTEC Higher National Diploma, Computing and networks for industry and technical services</h3>
-						<p><span>2008-2010</span> Lycée St Jospeh</p>
-					</div>
+					<div class="slide">
+						<div class="wrapper">
+							<div class="content">
+							
+							<div class="line odd">
+								<div class="year">
+									<div class="cadre">
+										<div class="text">
+											2013<br>-<br>2015
+										</div>			
+									</div>
+								</div>
 
+								<div class="detail">
+									<h3>Master's degree, Software Architect</h3>
+									<p>ENI Ecole Informatique</p>
+								</div>
+								
+							</div>
+								<div>
+									<h3>Master of Science (MSc), IT design and development</h3>
+									<p><span>2011-2013</span> ENI Ecole Informatique</p>
+								</div>
+								<div>
+									<h3>Bachelor of Applied Science (BASc), Design and Conception of Applications</h3>
+									<p><span>2010-2011</span> Université de Bretagne Occidentale</p>
+								</div>
+								<div>
+									<h3>BTEC Higher National Diploma, Computing and networks for industry and technical services</h3>
+									<p><span>2008-2010</span> Lycée St Jospeh</p>
+								</div>
 
-					<a href="#skills" class="sectionBtn">My skills</a>
+								<a href="#skills" class="sectionBtn">My skills</a>											
+							</div>
+						</div>				
+					</div>
 				</section>
 
 			</div> <!-- Item scope person -->
