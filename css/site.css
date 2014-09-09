@@ -608,6 +608,9 @@ header h1 em {
   font-size: 1.25em;
   display: inline-block;
 }
+.sectionBtn:focus {
+  outline: 0;
+}
 
 /* #################### HEADER #################### */
 h1 em {
@@ -816,6 +819,57 @@ h1 {
   width: 100%;
   margin-top: 17px;
   margin-left: -18px;
+}
+
+/*************************       Contact      ****************************/
+#contact fieldset {
+  border: none;
+}
+#contact h2 {
+  color: white;
+  font-size: 30px;
+  font-family: 'Intro';
+}
+#contact p {
+  color: white;
+  font-size: 14px;
+  font-family: 'OpenSans-Light';
+}
+#contact input, #contact textarea {
+  border: 1px #2f2326 solid;
+  padding: 16px 10px 12px 10px;
+  background-color: #000;
+  line-height: 20px;
+  color: #bd4664;
+  font-family: 'OpenSans-Light';
+  font-size: 20px;
+  resize: none;
+}
+#contact input:focus, #contact textarea:focus {
+  outline: 0;
+  -webkit-box-shadow: 0 0 5px rgba(189, 70, 100, 0.8);
+}
+#contact ::-webkit-input-placeholder {
+  color: #bd4664;
+  font-family: 'OpenSans-Light';
+  font-size: 20px;
+}
+#contact :-moz-placeholder {
+  /* Firefox 18- */
+  color: #bd4664;
+  font-family: 'OpenSans-Light';
+  font-size: 20px;
+}
+#contact ::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #bd4664;
+  font-family: 'OpenSans-Light';
+  font-size: 20px;
+}
+#contact :-ms-input-placeholder {
+  color: #bd4664;
+  font-family: 'OpenSans-Light';
+  font-size: 20px;
 }
 
 /* ##################### XXXXXXXX ##################### */

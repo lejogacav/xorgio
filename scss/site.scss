@@ -273,6 +273,10 @@ header{
 	font-family: 'OpenSans-Semibold';
 	font-size: 1.25em;
 	display: inline-block;
+
+	&:focus{
+		outline: 0;
+	}
 }
 
 /* #################### HEADER #################### */
@@ -523,5 +527,68 @@ h1 {
 	}
 }
 
+
+
+
+/*************************       Contact      ****************************/ 
+#contact{
+	fieldset{
+		border: none;
+	}
+
+	h2{
+		color: white;
+		font-size: 30px;
+		font-family: 'Intro';
+	}
+
+	p{
+		color: white;
+		font-size: 14px;
+		font-family: 'OpenSans-Light';
+	}
+
+	input, textarea{
+		border: 1px #2f2326 solid;
+		padding: 16px 10px 12px 10px;
+		background-color: #000;
+		line-height: 20px;
+
+		color: #bd4664;
+		font-family: 'OpenSans-Light';
+		font-size: 20px;
+
+		resize: none;
+
+		&:focus{
+			outline: 0;
+			-webkit-box-shadow: 0 0 5px rgba(189,70,100,0.8);
+		}
+	}
+
+	::-webkit-input-placeholder {
+		color: #bd4664;
+		font-family: 'OpenSans-Light';
+		font-size: 20px;
+	}
+
+	:-moz-placeholder { /* Firefox 18- */
+		color: #bd4664;  
+		font-family: 'OpenSans-Light';
+		font-size: 20px;
+	}
+
+	::-moz-placeholder {  /* Firefox 19+ */
+		color: #bd4664;  
+		font-family: 'OpenSans-Light';
+		font-size: 20px;
+	}
+
+	:-ms-input-placeholder {  
+		color: #bd4664;  
+		font-family: 'OpenSans-Light';
+		font-size: 20px;
+	}
+}
 
 /* ##################### XXXXXXXX ##################### */
