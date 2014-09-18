@@ -776,21 +776,25 @@ h1 {
   margin: 0;
 }
 #experience .line {
-  margin-bottom: 50px;
+  margin-bottom: 6em;
+  display: block;
+  margin-right: 38em;
+}
+#experience .line.even {
+  margin-left: 23em;
 }
 #experience .detail {
-  float: left;
-  margin-top: 30px;
-  line-height: 2;
+  margin-top: -6em;
+  padding-left: 6em;
+  margin-left: 50%;
+  line-height: 1;
   text-align: left;
-  margin-left: 50px;
 }
 #experience .year {
-  float: left;
+  position: relative;
   font-family: 'OpenSans-Bold';
   font-size: 24px;
   line-height: 0.8;
-  overflow: hidden;
   width: 120px;
   height: 120px;
   transform: rotate(-45deg);

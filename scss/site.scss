@@ -473,26 +473,43 @@ h1 {
 		margin: 0;
 	}
 
+
+
 	.line{
 		// width: 475px;
-		margin-bottom: 50px;
+		margin-bottom: 6em;
+		display: block;
+		margin-right: 38em;
+		&.odd{
+			// margin-right: 200px;
+		}
+		&.even{
+			margin-left: 23em;
+		}
 	}
 
 	.detail{
-		float: left;
-		margin-top: 30px;
-		line-height: 2;
+		// position: absolute;
+		// float: left;
+		margin-top: -6em;
+		padding-left: 6em;
+		margin-left: 50%;
+		line-height: 1;
 		text-align: left;
-		margin-left: 50px;
+		// margin-right: -500px;
+		// display: inline-block;
+		// transform: rotate(45deg);
+		// position:absolute;
 	}
 
 	.year{
-		float: left;
+		position:relative;
+		// float: left;
 		font-family: 'OpenSans-Bold';
 		font-size: 24px;
 		line-height: 0.8;
 
-		overflow: hidden;
+		// overflow: hidden;
 		width: 120px;
 		height: 120px;
 		transform: rotate(-45deg);
