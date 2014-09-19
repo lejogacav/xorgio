@@ -800,14 +800,15 @@ h1 {
 #experience .line.odd .detail {
   padding-left: 7em;
   padding-left: 50%;
-  margin-left: -12em;
+  margin-left: -13em;
 }
 #experience .line.even .year {
   -webkit-animation: invert-pulse 4s infinite ease-in-out;
-  margin-right: 9em;
+  margin-right: 10em;
 }
 #experience .line.even .detail {
   padding-left: 50%;
+  margin-left: -1em;
 }
 #experience .detail {
   margin-top: -5.5em;
