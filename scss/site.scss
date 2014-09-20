@@ -474,9 +474,15 @@ h1 {
 #experience{
 	color: white;
 	h3{
+		position: relative;
 		font-family: 'OpenSans-Bold';
 		font-size: 14px;
 		margin: 0;
+
+		span{
+			position: absolute;
+			bottom: 0;
+		}
 	}
 
 	p{
@@ -489,19 +495,42 @@ h1 {
 
 	.line{
 		width: 100%;
-		margin-bottom: 7em;
+		margin-bottom: 4em;
 		display: block;
+		position:relative;
 		//margin-left: -38em;
+		.detail{
+			position:absolute;
+			height: 100%;
+			width: 100%;
+			margin-top: -8.5em;
+		}
+
+		h3, p{			
+			// max-width: 293px;
+			height: 50%;
+		}
+
+		h3{
+			span{
+				padding-bottom: 10px;		
+			}
+		}
+
+		p{
+			padding-top: 5px;
+		}
+
 		&.odd{
 			// margin-right: 200px;
 			.year{
 	    		-webkit-animation: pulse 4s infinite ease-in-out;
-	    		margin-right: 24em;
+	    		margin-right: 21em;
 			}
 			.detail{
 				padding-left: 7em;
 				padding-left: 50%;
-				margin-left: -13em;
+				margin-left: -10em;
 			}
 		}
 		&.even{
@@ -509,13 +538,13 @@ h1 {
 
 			.year{				
 	    		-webkit-animation: invert-pulse 4s infinite ease-in-out;
-	    		margin-right: 10em;
+	    		margin-right: 6.5em;
 			}
 			.detail{
 				// padding-left: 7em;
 				padding-left: 50%;
-				margin-left: -1em;
-				
+				padding-right: 2.5em;
+				margin-left: 2.5em;				
 			}
 		}
 	}

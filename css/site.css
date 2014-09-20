@@ -779,9 +779,14 @@ h1 {
   color: white;
 }
 #experience h3 {
+  position: relative;
   font-family: 'OpenSans-Bold';
   font-size: 14px;
   margin: 0;
+}
+#experience h3 span {
+  position: absolute;
+  bottom: 0;
 }
 #experience p {
   font-family: 'OpenSans-Light';
@@ -790,25 +795,42 @@ h1 {
 }
 #experience .line {
   width: 100%;
-  margin-bottom: 7em;
+  margin-bottom: 4em;
   display: block;
+  position: relative;
+}
+#experience .line .detail {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  margin-top: -8.5em;
+}
+#experience .line h3, #experience .line p {
+  height: 50%;
+}
+#experience .line h3 span {
+  padding-bottom: 10px;
+}
+#experience .line p {
+  padding-top: 5px;
 }
 #experience .line.odd .year {
   -webkit-animation: pulse 4s infinite ease-in-out;
-  margin-right: 24em;
+  margin-right: 21em;
 }
 #experience .line.odd .detail {
   padding-left: 7em;
   padding-left: 50%;
-  margin-left: -13em;
+  margin-left: -10em;
 }
 #experience .line.even .year {
   -webkit-animation: invert-pulse 4s infinite ease-in-out;
-  margin-right: 10em;
+  margin-right: 6.5em;
 }
 #experience .line.even .detail {
   padding-left: 50%;
-  margin-left: -1em;
+  padding-right: 2.5em;
+  margin-left: 2.5em;
 }
 #experience .detail {
   margin-top: -5.5em;
