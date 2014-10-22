@@ -15,6 +15,7 @@ $icon-unactive-color: #65737d;
 $icon-color: #fcfcfc;
 $text-color: #fcfcfc;
 $text-color-blue: #65737d;
+$form-color: darken(#bd4664, 15%);
 
 $gradient-color1: #ff6a15;
 $gradient-color2: #bd4664;
@@ -102,6 +103,7 @@ body{
 	background: linear-gradient(to right, $site-bgc-begin , $site-bgc-end 50%);
 }
 
+
 /* Menu */
 .sideMenu{
 	width: 80px;
@@ -179,7 +181,6 @@ body{
 	}
 }
 
-header,
 main, 
 footer{
 	margin-left: 80px;
@@ -188,6 +189,7 @@ footer{
 
 header, section{
 	height: 100%;
+	min-height: 820px;
 	overflow: hidden;
 }
 
@@ -525,7 +527,7 @@ h1 {
 			// margin-right: 200px;
 			.year{
 	    		-webkit-animation: pulse 4s infinite ease-in-out;
-	    		margin-right: 21em;
+	    		margin-right: 21.1em;
 			}
 			.detail{
 				padding-left: 7em;
@@ -631,6 +633,8 @@ h1 {
 		padding: 16px 10px 12px 10px;
 		background-color: #000;
 		line-height: 20px;
+		width: 100%;
+		max-width: 670px;
 
 		// color: #bd4664;
 		color: white;
@@ -646,25 +650,25 @@ h1 {
 	}
 
 	::-webkit-input-placeholder {
-		color: #bd4664;
+		color: $form-color;
 		font-family: 'OpenSans-Light';
 		font-size: 20px;
 	}
 
 	:-moz-placeholder { /* Firefox 18- */
-		color: #bd4664;  
+		color: $form-color;  
 		font-family: 'OpenSans-Light';
 		font-size: 20px;
 	}
 
 	::-moz-placeholder {  /* Firefox 19+ */
-		color: #bd4664;  
+		color: $form-color;  
 		font-family: 'OpenSans-Light';
 		font-size: 20px;
 	}
 
 	:-ms-input-placeholder {  
-		color: #bd4664;  
+		color: $form-color;  
 		font-family: 'OpenSans-Light';
 		font-size: 20px;
 	}

@@ -134,15 +134,17 @@
 		</nav>
 		
 		<header role="banner">
-			<div class="slide">
-				<div class="wrapper">
-					<div class="content">
-						<img src="pictos/Logo-Jo-01.svg" alt="Logo Xorg.io">
-						<h1>Xorg, a french <em>front-end developer</em></h1>
-						<a href="#about" class="sectionBtn">About me</a>					
-					</div>
-				</div>				
-			</div>
+			<section id="home">
+				<div class="slide">
+					<div class="wrapper">
+						<div class="content">
+							<img src="pictos/Logo-Jo-01.svg" alt="Logo Xorg.io">
+							<h1>Xorg, a french <em>front-end developer</em></h1>
+							<a href="#about" class="sectionBtn">About me</a>					
+						</div>
+					</div>				
+				</div>
+			</section>
 		</header>
 		<main role="main">
 			<div id="person" itemscope itemtype="http://schema.org/Person">
@@ -277,57 +279,71 @@
 			</div> <!-- Item scope person -->
 
 			<section id="skills">
-				<h3>C# <span>90&nbsp;%</span> </h3>
-				<h3><abbr title="Visual Basic">VB</abbr><span>80&nbsp;%</span></h3>
-				<h3>ASP.NET MVC<span>80&nbsp;%</span></h3>
-				<h3>AngularJs<span>60%</span></h3>
-				<h3><abbr title="JavaScript">JS</abbr><span>90&nbsp;%</span></h3>
-				<h3>JQuery<span>80&nbsp;%</span></h3>
-				<h3>HTML 5<span>80&nbsp;%</span></h3>
-				<h3>CSS 3<span>90&nbsp;%</span></h3>
-				<h3>SCSS, LESS<span>70&nbsp;%</span></h3>
-				<h3>SQL<span>70&nbsp;%</span></h3>
-				<h3>TFS<span>70&nbsp;%</span></h3>
-				<h3>Reporting Services<span>80&nbsp;%</span></h3>
-				<a href="#contact" class="sectionBtn">Contact me</a>
+				<div class="slide">
+					<div class="wrapper">
+						<div class="content">
+							<h3>C# <span>90&nbsp;%</span> </h3>
+							<h3><abbr title="Visual Basic">VB</abbr><span>80&nbsp;%</span></h3>
+							<h3>ASP.NET MVC<span>80&nbsp;%</span></h3>
+							<h3>AngularJs<span>60%</span></h3>
+							<h3><abbr title="JavaScript">JS</abbr><span>90&nbsp;%</span></h3>
+							<h3>JQuery<span>80&nbsp;%</span></h3>
+							<h3>HTML 5<span>80&nbsp;%</span></h3>
+							<h3>CSS 3<span>90&nbsp;%</span></h3>
+							<h3>SCSS, LESS<span>70&nbsp;%</span></h3>
+							<h3>SQL<span>70&nbsp;%</span></h3>
+							<h3>TFS<span>70&nbsp;%</span></h3>
+							<h3>Reporting Services<span>80&nbsp;%</span></h3>
+							<a href="#contact" class="sectionBtn">Contact me</a>			
+							
+						</div>
+					</div>				
+				</div>				
 			</section>
+
 			<section id="contact">
-				<h2>Feel free to contact me</h2><!-- H2 pour cette section n'est pas approprié (optimisation d'un champ trop quelconque) -->
-				<p>* optionnal inputs</p>
+				<div class="slide">
+					<div class="wrapper">
+						<div class="content">										
+							<h2>Feel free to contact me</h2><!-- H2 pour cette section n'est pas approprié (optimisation d'un champ trop quelconque) -->
+							<p>* optionnal inputs</p>							
+							
+							<form>
+							
+								<fieldset>
+									<label for="name"></label>
+									<input type="text" id="name" name="name" aria-required="true" placeholder="name">
+								</fieldset>
+								
+								<fieldset>
+									<label for="society"></label>
+									<input type="text" id="society" name="society" placeholder="society">
+								</fieldset>
+								
+								<fieldset>
+									<label for="email"></label>
+									<input type="email" id="email" name="email" aria-required="true" placeholder="email">
+								</fieldset>
+								
+								<fieldset>
+									<label for="subject"></label>
+									<input type="text" id="subject" name="subject" placeholder="subject">
+								</fieldset>
+								
+								<fieldset>
+									<label for="message"></label>
+									<textarea rows="3" id="message" name="message" aria-required="true" placeholder="message"></textarea>
+								</fieldset>
+								
+								<fieldset>
+									<a href="#send" class="sectionBtn">Send</a>
+								</fieldset>								
+							</form>
+						</div>
+					</div>				
+				</div>	
+
 				
-				
-				<form>
-				
-					<fieldset>
-						<label for="name" id=""></label>
-						<input type="text" id="name" name="name" aria-required="true" placeholder="name">
-					</fieldset>
-					
-					<fieldset>
-						<label for="society" id=""></label>
-						<input type="text" id="society" name="society" placeholder="society">
-					</fieldset>
-					
-					<fieldset>
-						<label for="email" id=""></label>
-						<input type="email" id="email" name="email" aria-required="true" placeholder="email">
-					</fieldset>
-					
-					<fieldset>
-						<label for="subject" id=""></label>
-						<input type="text" id="subject" name="subject" placeholder="subject">
-					</fieldset>
-					
-					<fieldset>
-						<label for="message" id=""></label>
-						<textarea rows="3" type="text" id="message" name="message" aria-required="true" placeholder="message"></textarea>
-					</fieldset>
-					
-					<fieldset>
-						<a href="#send" class="sectionBtn">Send</a>
-					</fieldset>
-					
-				</form>
 				
 			</section>
 		</main>
@@ -344,6 +360,31 @@
 		<script>
 			jQuery("header h1").fitText(1.0, { maxFontSize: '50px' });
 			jQuery("#about h2").fitText(1.0, { maxFontSize: '30px' });
+
+			$.fn.scrollTo = function( target, options, callback ){
+			  if(typeof options == 'function' && arguments.length == 2){ callback = options; options = target; }
+			  var settings = $.extend({
+			    scrollTarget  : target,
+			    offsetTop     : 50,
+			    duration      : 500,
+			    easing        : 'swing'
+			  }, options);
+			  return this.each(function(){
+			    var scrollPane = $(this);
+			    var scrollTarget = (typeof settings.scrollTarget == "number") ? settings.scrollTarget : $(settings.scrollTarget);
+			    var scrollY = (typeof scrollTarget == "number") ? scrollTarget : scrollTarget.offset().top + scrollPane.scrollTop() - parseInt(settings.offsetTop);
+			    scrollPane.animate({scrollTop : scrollY }, parseInt(settings.duration), settings.easing, function(){
+			      if (typeof callback == 'function') { callback.call(this); }
+			    });
+			  });
+			}
+
+			$(function(){
+			  $(".sectionBtn, li").click(function(e){
+			    e.preventDefault();
+			    $('html,body').scrollTo(this.hash,this.hash); 
+			  });
+			});
 			// jQuery("sectionBtn").fitText(1.2, { maxFontSize: '1.25em' });
 		</script>
 		<script>/* Statistiques Google */

@@ -524,7 +524,6 @@ body {
   transition: left 0.25s ease-in-out;
 }
 
-header,
 main,
 footer {
   margin-left: 80px;
@@ -533,6 +532,7 @@ footer {
 
 header, section {
   height: 100%;
+  min-height: 820px;
   overflow: hidden;
 }
 
@@ -816,7 +816,7 @@ h1 {
 }
 #experience .line.odd .year {
   -webkit-animation: pulse 4s infinite ease-in-out;
-  margin-right: 21em;
+  margin-right: 21.1em;
 }
 #experience .line.odd .detail {
   padding-left: 7em;
@@ -890,6 +890,8 @@ h1 {
   padding: 16px 10px 12px 10px;
   background-color: #000;
   line-height: 20px;
+  width: 100%;
+  max-width: 670px;
   color: white;
   font-family: 'OpenSans-Light';
   font-size: 20px;
@@ -900,24 +902,24 @@ h1 {
   -webkit-box-shadow: 0 0 5px rgba(189, 70, 100, 0.8);
 }
 #contact ::-webkit-input-placeholder {
-  color: #bd4664;
+  color: #873046;
   font-family: 'OpenSans-Light';
   font-size: 20px;
 }
 #contact :-moz-placeholder {
   /* Firefox 18- */
-  color: #bd4664;
+  color: #873046;
   font-family: 'OpenSans-Light';
   font-size: 20px;
 }
 #contact ::-moz-placeholder {
   /* Firefox 19+ */
-  color: #bd4664;
+  color: #873046;
   font-family: 'OpenSans-Light';
   font-size: 20px;
 }
 #contact :-ms-input-placeholder {
-  color: #bd4664;
+  color: #873046;
   font-family: 'OpenSans-Light';
   font-size: 20px;
 }
