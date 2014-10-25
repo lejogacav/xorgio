@@ -684,6 +684,10 @@ h1 {
 		}
 	}
 
+	button{
+		border: 0;
+	}
+
 	::-webkit-input-placeholder {
 		color: $form-color;
 		font-family: 'OpenSans-Light';

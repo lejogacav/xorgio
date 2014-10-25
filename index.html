@@ -140,7 +140,7 @@
 					<div class="wrapper">
 						<div class="content">
 							<img src="pictos/Logo-Jo-01.svg" alt="Logo Xorg.io">
-							<h1>Xorg, a french <em style="display:none">front-end developer</em><br><span id="typed" style="white-space:pre"></span></h1>
+							<h1>Xorg, a french <em class="hidden">front-end developer</em><br><span id="typed" style="white-space:pre"></span></h1>
 							<a href="#about" class="sectionBtn">About me</a>					
 						</div>
 					</div>				
@@ -188,7 +188,7 @@
 									</ul>
 								</nav>
 
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum ea eius ipsum quaerat a praesentium repudiandae ipsam sed laborum voluptatum.</p>
+								<p id="resume">I'm a web developer from Nantes. I like to work on anything from UI design and backend web programming.<br>If you want<span class="hidden">to work with me, to hire me or need an application,</span><span id="typeResume" style="white-space:pre"></span> please complete the contact form <a href="#contact">here</a>.</p>
 
 								<a href="#experience" class="sectionBtn">My experience</a>												
 							</div>
@@ -313,39 +313,38 @@
 							
 								<fieldset>
 									<label for="name"></label>
-									<input type="text" id="name" name="name" aria-required="true" placeholder="name">
+									<input type="text" name="name" aria-required="true" placeholder="name" required>
 								</fieldset>
 								
 								<fieldset>
 									<label for="society"></label>
-									<input type="text" id="society" name="society" placeholder="society">
+									<input type="text" name="society" placeholder="society *">
 								</fieldset>
 								
 								<fieldset>
 									<label for="email"></label>
-									<input type="email" id="email" name="email" aria-required="true" placeholder="email">
+									<input type="email" name="email" aria-required="true" placeholder="email" required>
 								</fieldset>
 								
 								<fieldset>
 									<label for="subject"></label>
-									<input type="text" id="subject" name="subject" placeholder="subject">
+									<input type="text" name="subject" placeholder="subject" required>
 								</fieldset>
 								
 								<fieldset>
 									<label for="message"></label>
-									<textarea rows="3" id="message" name="message" aria-required="true" placeholder="message"></textarea>
+									<textarea rows="3" name="message" aria-required="true" placeholder="message" required></textarea>
 								</fieldset>
 								
 								<fieldset>
-									<a href="#send" class="sectionBtn">Send</a>
+									<!-- <a href="#send" class="sectionBtn">Send</a> -->
+									<!-- <input type="submit" value="Send" class="sectionBtn"> -->
+									<button name="mybutton" type="submit" value="Send" class="sectionBtn">Send</button>
 								</fieldset>								
 							</form>
 						</div>
 					</div>				
-				</div>	
-
-				
-				
+				</div>					
 			</section>
 		</main>
 		<footer role="contentinfo">© copyright 2014 Johan le Roch - France</footer>
@@ -362,24 +361,6 @@
 		<script>
 			jQuery("header h1").fitText(1.0, { maxFontSize: '50px' });
 			jQuery("#about h2").fitText(1.0, { maxFontSize: '30px' });
-
-			$.fn.scrollTo = function( target, options, callback ){
-			  if(typeof options == 'function' && arguments.length == 2){ callback = options; options = target; }
-			  var settings = $.extend({
-			    scrollTarget  : target,
-			    offsetTop     : 50,
-			    duration      : 500,
-			    easing        : 'swing'
-			  }, options);
-			  return this.each(function(){
-			    var scrollPane = $(this);
-			    var scrollTarget = (typeof settings.scrollTarget == "number") ? settings.scrollTarget : $(settings.scrollTarget);
-			    var scrollY = (typeof scrollTarget == "number") ? scrollTarget : scrollTarget.offset().top + scrollPane.scrollTop() - parseInt(settings.offsetTop);
-			    scrollPane.animate({scrollTop : scrollY }, parseInt(settings.duration), settings.easing, function(){
-			      if (typeof callback == 'function') { callback.call(this); }
-			    });
-			  });
-			}
 
 			// jQuery("sectionBtn").fitText(1.2, { maxFontSize: '1.25em' });
 		</script>
@@ -404,6 +385,21 @@
 		            lift();
 		        }
 		    });
+
+		    $("#typeResume").typed({
+		        strings: [" to work with me", " to hire me", " a web application"],
+		        typeSpeed: 0, // typing speed
+	            backSpeed: 50, // backspacing speed
+	            startDelay: 0, // time before typing starts
+	            backDelay: 2500, // pause before backspacing
+	            loop: false, // loop on or off (true or false)
+	            loopCount: false,
+	            showCursor: false,
+		        callback: function(){
+		            lift();
+		        }
+		    });
+
 		    function lift(){
 		        $(".head-text").addClass("lift-text");
 		    }

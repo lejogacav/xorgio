@@ -961,6 +961,9 @@ h1 {
   outline: 0;
   -webkit-box-shadow: 0 0 5px rgba(189, 70, 100, 0.8);
 }
+#contact button {
+  border: 0;
+}
 #contact ::-webkit-input-placeholder {
   color: #873046;
   font-family: 'OpenSans-Light';
