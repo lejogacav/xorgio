@@ -34,6 +34,7 @@
 		<script src="scripts/modernizr-min.js"></script>
 	</head>
 	<body>
+		<div class="halobackground"></div>
 		<nav class="sideMenu" role="navigation">			 
 			<a rel="home" href="#home">home</a>
 			<ul class="menu">
@@ -139,13 +140,13 @@
 					<div class="wrapper">
 						<div class="content">
 							<img src="pictos/Logo-Jo-01.svg" alt="Logo Xorg.io">
-							<h1>Xorg, a french <em>front-end developer</em></h1>
+							<h1>Xorg, a french <em style="display:none">front-end developer</em><br><span id="typed" style="white-space:pre"></span></h1>
 							<a href="#about" class="sectionBtn">About me</a>					
 						</div>
 					</div>				
 				</div>
 			</section>
-		</header>
+		</header> 
 		<main role="main">
 			<div id="person" itemscope itemtype="http://schema.org/Person">
 							
@@ -180,10 +181,10 @@
 
 								<nav role="navigation">
 									<ul>
-										<li class="facebook">Facebook</li>
+										<li class="facebook" onclick="location.href='https://www.facebook.com/jleroch';">Facebook</li>
 										<li class="twitter">Twitter</li>
-										<li class="google">Google+</li>
-										<li class="linkedin">LinkedIn</li>
+										<li class="google">Google+</li>										
+										<li class="linkedin" onclick="location.href='https://www.linkedin.com/in/johanleroch/en';">LinkedIn</li>
 									</ul>
 								</nav>
 
@@ -356,7 +357,8 @@
 		
 		-->
 		<script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
-		<script src="scripts/jquery.fittext.js"></script>
+		<script src="scripts/jquery.fittext.js"></script>		
+		<script src="scripts/typed.js"></script>
 		<script>
 			jQuery("header h1").fitText(1.0, { maxFontSize: '50px' });
 			jQuery("#about h2").fitText(1.0, { maxFontSize: '30px' });
@@ -379,12 +381,6 @@
 			  });
 			}
 
-			$(function(){
-			  $(".sectionBtn, li").click(function(e){
-			    e.preventDefault();
-			    $('html,body').scrollTo(this.hash,this.hash); 
-			  });
-			});
 			// jQuery("sectionBtn").fitText(1.2, { maxFontSize: '1.25em' });
 		</script>
 		<script>/* Statistiques Google */
@@ -394,6 +390,23 @@
 		    e.src='http://www.google-analytics.com/analytics.js';
 		    r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
 		    ga('create','UA-XXXXX-X');ga('send','pageview');
+		</script>
+		<script>
+		    $("#typed").typed({
+		        strings: ["web developer", "software engineer", "front-end developer^5000"],
+		        typeSpeed: 40, // typing speed
+	            backSpeed: 50, // backspacing speed
+	            startDelay: 0, // time before typing starts
+	            backDelay: 2000, // pause before backspacing
+	            loop: true, // loop on or off (true or false)
+	            loopCount: false,
+		        callback: function(){
+		            lift();
+		        }
+		    });
+		    function lift(){
+		        $(".head-text").addClass("lift-text");
+		    }
 		</script>	
 	</body>
 	</html>

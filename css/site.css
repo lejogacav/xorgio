@@ -394,6 +394,54 @@ th {
   padding: 0;
 }
 
+/* Typing effects */
+.typed-cursor {
+  opacity: 1;
+  -webkit-animation: blink 0.7s infinite;
+  -moz-animation: blink 0.7s infinite;
+  animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes blink {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+@-moz-keyframes blink {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+/* End typing effects */
 @-webkit-keyframes pulse {
   0% {
     -webkit-box-shadow: 0 0 25px rgba(189, 70, 100, 0.2);
@@ -457,12 +505,24 @@ body {
   background: linear-gradient(to right, #101010, #202020 50%);
 }
 
+.halobackground {
+  background-image: url(../img/gradient.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: fixed;
+  width: 1067px;
+  height: 470px;
+  left: 50%;
+  margin-left: -500px;
+}
+
 /* Menu */
 .sideMenu {
   width: 80px;
   height: 100%;
   background-color: black;
   position: fixed;
+  z-index: 1;
 }
 .sideMenu a[rel="home"] {
   display: block;
