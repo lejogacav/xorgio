@@ -959,6 +959,12 @@ h1 {
   line-height: 1;
   font-size: 17px;
 }
+@media screen and (max-width: 700px) {
+  #skills .break {
+    display: inline-block;
+    clear: both;
+  }
+}
 
 /*************************       Contact      ****************************/
 #contact fieldset {
@@ -1017,3 +1023,21 @@ h1 {
 }
 
 /* ##################### XXXXXXXX ##################### */
+@media screen and (max-width: 800px) {
+  #experience .year {
+    margin-right: 12em !important;
+  }
+  #experience .detail {
+    margin-left: -3em !important;
+  }
+}
+@media screen and (max-width: 700px) {
+  #skills {
+    min-height: 1200px;
+  }
+}
+@media screen and (max-width: 400px) {
+  #skills {
+    min-height: 2100px;
+  }
+}
