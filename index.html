@@ -38,7 +38,7 @@
 		<nav class="sideMenu" role="navigation">			 
 			<a rel="home" href="#home">home</a>
 			<ul class="menu">
-				<li onclick="location.href='#about';" class="btn aboutme">				
+				<li onclick='$("a[href=#about]").click()' class="btn aboutme">				
 						<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 						width="100px" height="100px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
 							<g>
@@ -65,7 +65,7 @@
 							About me
 						</div>
 				</li>
-				<li onclick="location.href='#experience';" class="btn xp">
+				<li onclick='$("a[href=#experience]").click()' class="btn xp">
 					<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 						 width="100px" height="100px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
 					<g>
@@ -84,7 +84,7 @@
 						My experience
 					</div>
 				</li>
-				<li onclick="location.href='#skills';" class="btn skill">
+				<li onclick='$("a[href=#skills]").click()' class="btn skill">
 					<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 						 width="100px" height="100px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
 					<g>
@@ -112,7 +112,7 @@
 						My skills
 					</div>
 				</li>
-				<li onclick="location.href='#contact';" class="btn message">
+				<li onclick='$("a[href=#contact]").click()' class="btn message">
 					<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 						 width="100px" height="100px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
 					<g>
@@ -702,7 +702,8 @@
 		<script src="scripts/jquery.fittext.js"></script>		
 		<script src="scripts/typed.js"></script>
 		<script>
-			jQuery("header h1").fitText(1.0, { maxFontSize: '50px' });
+			// jQuery("header h1").fitText(1.0, { maxFontSize: '50px' });
+			// jQuery("typed").fitText(1.0, { maxFontSize: '50px' });
 			jQuery("#about h2").fitText(1.0, { maxFontSize: '30px' });
 
 			// jQuery(".responsiveCircle h3").fitText(1.2, { maxFontSize: '18px' });
@@ -770,6 +771,13 @@
 
 		    });
 
+
+		    $('a').click(function() {
+		        var elementClicked = $(this).attr("href");
+		        var destination = $(elementClicked).offset().top;
+		        $("html:not(:animated),body:not(:animated)").animate({ scrollTop: destination-15}, 500 );
+		        return false;
+		    });
 		</script>	
 	</body>
 	</html>
