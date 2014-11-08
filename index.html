@@ -159,7 +159,7 @@
 									<div class="gradiant">
 									</div>
 								</div>
-								<h2><a itemprop="url" href="http://xorg.io/"><span itemprop="name"></span>Johan le Roch</a></h2>
+								<h2><a itemprop="url" href="http://xorg.io/"><span itemprop="name">Johan le Roch</span></a></h2>
 								<meta itemprop="jobtitle" content="Front-end developer">
 									
 								<address itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
@@ -208,7 +208,7 @@
 											</div>
 										</div>
 											<div class="detail">
-												<h3><span>Master's degree, Software Architect</span></h3>
+												<h3><span>Master's degree, Software Architect.</span></h3>
 												<p>ENI Ecole Informatique</p>
 												<div style="clear:both"></div>	
 											</div>
@@ -635,7 +635,6 @@
 
 							<div class="break"></div>
 							<a href="#contact" class="sectionBtn">Contact me</a>			
-							
 						</div>
 					</div>				
 				</div>				
@@ -648,7 +647,7 @@
 							<h2>Feel free to contact me</h2>
 							<p>* optionnal inputs</p>							
 							
-							<form method="POST" action="send_form_email.php">
+							<form method="POST" action="http://xorg.io:54524/send">
 							
 								<fieldset>
 									<label for="name"></label>
@@ -690,7 +689,6 @@
 		<script src="scripts/jquery.fittext.js"></script>		
 		<script src="scripts/typed.js"></script>
 		<script>
-			jQuery("#about h2").fitText(1.0, { maxFontSize: '30px' });
 		</script>
 		<script>
 		    (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
@@ -700,67 +698,70 @@
 		    r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
 		    ga('create','UA-XXXXX-X');ga('send','pageview');
 		</script>
-		<script>
-		    $("#typed").typed({
-		        strings: ["web developer", "software engineer", "front-end developer^5000"],
-		        typeSpeed: 40, // typing speed
-	            backSpeed: 50, // backspacing speed
-	            startDelay: 0, // time before typing starts
-	            backDelay: 2000, // pause before backspacing
-	            loop: true, // loop on or off (true or false)
-	            loopCount: false,
-		        callback: function(){
-		            lift();
-		        }
-		    });
+		<script>		
+			// jQuery("#about h2").fitText(1.0, { maxFontSize: '30px' });
+		 //    $("#typed").typed({
+		 //        strings: ["web developer", "software engineer", "front-end developer^5000"],
+		 //        typeSpeed: 40, // typing speed
+	  //           backSpeed: 50, // backspacing speed
+	  //           startDelay: 0, // time before typing starts
+	  //           backDelay: 2000, // pause before backspacing
+	  //           loop: true, // loop on or off (true or false)
+	  //           loopCount: false,
+		 //        callback: function(){
+		 //            lift();
+		 //        }
+		 //    });
 
-		    $("#typeResume").typed({
-		        strings: [" to work with me", " to hire me", " a web application"],
-		        typeSpeed: 0, // typing speed
-	            backSpeed: 50, // backspacing speed
-	            startDelay: 0, // time before typing starts
-	            backDelay: 2500, // pause before backspacing
-	            loop: true, // loop on or off (true or false)
-	            loopCount: false,
-	            showCursor: false,
-		        callback: function(){
-		            lift();
-		        }
-		    });
+		 //    $("#typeResume").typed({
+		 //        strings: [" to work with me", " to hire me", " a web application"],
+		 //        typeSpeed: 0, // typing speed
+	  //           backSpeed: 50, // backspacing speed
+	  //           startDelay: 0, // time before typing starts
+	  //           backDelay: 2500, // pause before backspacing
+	  //           loop: true, // loop on or off (true or false)
+	  //           loopCount: false,
+	  //           showCursor: false,
+		 //        callback: function(){
+		 //            lift();
+		 //        }
+		 //    });
 
-		    function lift(){
-		        $(".head-text").addClass("lift-text");
-		    }
+		 //    function lift(){
+		 //        $(".head-text").addClass("lift-text");
+		 //    }
 
-		    $(function(){
+		 //    $(function(){
 
-			    var colors = ["#be4763", "#c1485f", "#c74c58", "#d1514d", "#dc573e", 
-						      "#e95e30", "#f46423", "#fa671b", "#fd6918", "#fe6916", 
-						      "#fd6918", "#fa671b", "#f36324", "#e95e2f", "#dc573e", 
-						      "#d1514d", "#c74c58", "#c1485f", "#be4763", "#be4763"];
+			//     var colors = ["#be4763", "#c1485f", "#c74c58", "#d1514d", "#dc573e", 
+			// 			      "#e95e30", "#f46423", "#fa671b", "#fd6918", "#fe6916", 
+			// 			      "#fd6918", "#fa671b", "#f36324", "#e95e2f", "#dc573e", 
+			// 			      "#d1514d", "#c74c58", "#c1485f", "#be4763", "#be4763"];
 
-				var circles = $('.responsiveCircle > svg');
-				circles.each(function(){
+			// 	var circles = $('.responsiveCircle > svg');
+			// 	circles.each(function(){
 
-			    	var circle = $(this);
-			    	var layerClass = circle.attr('class');
-			    	var nbPointToFill = parseInt(layerClass) * 20/100;
+			//     	var circle = $(this);
+			//     	var layerClass = circle.attr('class');
+			//     	var nbPointToFill = parseInt(layerClass) * 20/100;
 
-			    	for(var i = 0; i <= nbPointToFill -1; i++){
-			    		circle.children()[i].style.fill = colors[i];
-			    	}
+			//     	for(var i = 0; i <= nbPointToFill -1; i++){
+			//     		circle.children()[i].style.fill = colors[i];
+			//     	}
 
-				});
+			// 	});
 
-		    });
+		 //    });
 
 
-		    $('a').click(function() {
-		        var elementClicked = $(this).attr("href");
-		        var destination = $(elementClicked).offset().top;
-		        $("html:not(:animated),body:not(:animated)").animate({ scrollTop: destination-15}, 500 );
-		        return false;
-		    });
+		 //    $('a').click(function() {
+		 //        var elementClicked = $(this).attr("href");
+		 //        var destination = $(elementClicked).offset().top;
+		 //        $("html:not(:animated),body:not(:animated)").animate({ scrollTop: destination-15}, 500 );
+		 //        return false;
+		 //    });
+		function lift(){$(".head-text").addClass("lift-text")}jQuery("#about h2").fitText(1,{maxFontSize:"30px"}),$("#typed").typed({strings:["web developer","software engineer","front-end developer^5000"],typeSpeed:40,backSpeed:50,startDelay:0,backDelay:2e3,loop:!0,loopCount:!1,callback:function(){lift()}}),$("#typeResume").typed({strings:[" to work with me"," to hire me"," a web application"],typeSpeed:0,backSpeed:50,startDelay:0,backDelay:2500,loop:!0,loopCount:!1,showCursor:!1,callback:function(){lift()}}),$(function(){var n=["#be4763","#c1485f","#c74c58","#d1514d","#dc573e","#e95e30","#f46423","#fa671b","#fd6918","#fe6916","#fd6918","#fa671b","#f36324","#e95e2f","#dc573e","#d1514d","#c74c58","#c1485f","#be4763","#be4763"],t=$(".responsiveCircle > svg");t.each(function(){for(var i=$(this),r=i.attr("class"),u=parseInt(r)/5,t=0;t<=u-1;t++)i.children()[t].style.fill=n[t]})}),$("a").click(function(){var n=$(this).attr("href"),t=$(n).offset().top;return $("html:not(:animated),body:not(:animated)").animate({scrollTop:t-15},500),!1})
+
 		</script>	
 	</body>
 	</html>

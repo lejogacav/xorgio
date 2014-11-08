@@ -470,29 +470,29 @@ th {
 }
 @font-face {
   font-family: 'OpenSans-Bold';
-  src: url("../Fonts/opensans-bold-webfont.eot");
-  src: url("../Fonts/opensans-bold-webfont.eot?#iefix") format("embedded-opentype"), url("../Fonts/opensans-bold-webfont.woff") format("woff"), url("../Fonts/opensans-bold-webfont.ttf") format("truetype"), url("../Fonts/opensans-bold-webfont.svg#open_sansbold") format("svg");
+  src: url("../fonts/opensans-bold-webfont.eot");
+  src: url("../fonts/opensans-bold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/opensans-bold-webfont.woff") format("woff"), url("../fonts/opensans-bold-webfont.ttf") format("truetype"), url("../fonts/opensans-bold-webfont.svg#open_sansbold") format("svg");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: 'OpenSans-Semibold';
-  src: url("../Fonts/opensans-semibold-webfont.otf");
-  src: url("../Fonts/opensans-semibold-webfont.eot?#iefix") format("embedded-opentype"), url("../Fonts/opensans-semibold-webfont.woff") format("woff"), url("../Fonts/opensans-semibold-webfont.ttf") format("truetype");
+  src: url("../fonts/opensans-semibold-webfont.otf");
+  src: url("../fonts/opensans-semibold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/opensans-semibold-webfont.woff") format("woff"), url("../fonts/opensans-semibold-webfont.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: 'OpenSans-Light';
-  src: url("../Fonts/opensans-light-webfont.eot");
-  src: url("../Fonts/opensans-light-webfont.eot?#iefix") format("embedded-opentype"), url("../Fonts/opensans-light-webfont.woff") format("woff"), url("../Fonts/opensans-light-webfont.ttf") format("truetype"), url("../Fonts/opensans-light-webfont.svg#open_sanslight") format("svg");
+  src: url("../fonts/opensans-light-webfont.eot");
+  src: url("../fonts/opensans-light-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/opensans-light-webfont.woff") format("woff"), url("../fonts/opensans-light-webfont.ttf") format("truetype"), url("../fonts/opensans-light-webfont.svg#open_sanslight") format("svg");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: 'Intro';
-  src: url("../Fonts/intro-webfont.eot");
-  src: url("../Fonts/intro-webfont.eot?#iefix") format("embedded-opentype"), url("../Fonts/intro-webfont.woff") format("woff"), url("../Fonts/intro-webfont.ttf") format("truetype");
+  src: url("../fonts/intro-webfont.eot");
+  src: url("../fonts/intro-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/intro-webfont.woff") format("woff"), url("../fonts/intro-webfont.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
@@ -532,11 +532,21 @@ body {
   line-height: 800px;
   background: url("../pictos/Logo-Jo-80x80.svg") no-repeat;
   transform: scale(0.4);
+  -ms-transform: scale(0.4); /* IE 9 */
+  -webkit-transform: scale(0.4); /* Chrome, Safari, Opera */
+
   transition: transform 0.3s linear;
+  -ms-transition: transform 0.3s linear; /* IE 9 */
+  -webkit-transition: transform 0.3s linear; /* Chrome, Safari, Opera */
 }
 .sideMenu a[rel="home"]:hover {
   transform: scale(0.4) rotate(-90deg);
+  -ms-transform: scale(0.4) rotate(-90deg);
+  -webkit-transform: scale(0.4) rotate(-90deg);
+
   transition: transform 0.3s linear;
+  -ms-transition: transform 0.3s linear;
+  -webkit-transition: transform 0.3s linear;
 }
 .sideMenu .menu {
   position: absolute;
@@ -582,6 +592,8 @@ body {
   font-family: "OpenSans-Semibold";
   font-size: 20px;
   transition: left 0.25s ease-in-out;
+  -ms-transition: left 0.25s ease-in-out; /* IE 9 */
+  -webkit-transition: left 0.25s ease-in-out; /* Chrome, Safari, Opera */
 }
 
 main,
@@ -646,6 +658,9 @@ header h1 em {
 
 .svg .sectionBtn::after, .no-svg .sectionBtn::after {
   transition: transform 0.2s linear;
+  -ms-transition: transform 0.2s linear; /* IE 9 */
+  -webkit-transition: transform 0.2s linear; /* Chrome, Safari, Opera */
+
   content: '';
   background-position: -50px -180px;
   display: inline-block;
@@ -659,6 +674,9 @@ header h1 em {
 .sectionBtn:hover, .sectionBtn:focus {
   background-color: #ff6a15;
   transition: background 0.2s linear;
+  -ms-transition: background 0.2s linear; /* IE 9 */
+  -webkit-transition: background 0.2s linear; /* Chrome, Safari, Opera */
+
   text-decoration: none;
   color: white;
 }
@@ -672,6 +690,8 @@ header h1 em {
 /* #################### XXXX #################### */
 .sectionBtn {
   transition: background 0.2s linear;
+  -ms-transition: background 0.2s linear;
+  -webkit-transition: background 0.2s linear;
   text-align: center;
   padding: 1.1875em 2.3125em;
   background-color: #000;
@@ -704,6 +724,8 @@ h1 {
   width: 40vw;
   height: 40vw;
   transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg); /* IE 9 */
+  -webkit-transform: rotate(-45deg); /* Chrome, Safari, Opera */
   border-top: 3px solid #ff6a15;
   border-bottom: 3px solid #cb4e53;
   background-image: linear-gradient(#ff6a15, #cb4e53), linear-gradient(#ff6a15, #cb4e53);
@@ -719,6 +741,8 @@ h1 {
   width: 40vw;
   height: 40vw;
   transform: rotate(45deg) scale(2);
+  -ms-transform: rotate(45deg) scale(2);
+  -webkit-transform: rotate(45deg) scale(2);
   opacity: 0.4;
   background: -moz-linear-gradient(top, rgba(189, 70, 100, 0) 0%, rgba(189, 70, 100, 0.59) 59%, #ff6a15 100%);
   /* FF3.6+ */
@@ -745,6 +769,8 @@ h1 {
 }
 .photo .cadre img {
   transform: rotate(45deg) scale(0.85) translate(-42%, 21%);
+  -ms-transform: rotate(45deg) scale(0.85) translate(-42%, 21%);
+  -webkit-transform: rotate(45deg) scale(0.85) translate(-42%, 21%);
   height: 200%;
 }
 
@@ -879,6 +905,7 @@ h1 {
 }
 #experience .line.odd .year {
   -webkit-animation: pulse 4s infinite ease-in-out;
+  -ms-animation: pulse 4s infinite ease-in-out;
   margin-right: 21.1em;
 }
 #experience .line.odd .detail {
@@ -888,6 +915,7 @@ h1 {
 }
 #experience .line.even .year {
   -webkit-animation: invert-pulse 4s infinite ease-in-out;
+  -ms-animation: invert-pulse 4s infinite ease-in-out;
   margin-right: 6.5em;
 }
 #experience .line.even .detail {
@@ -908,6 +936,8 @@ h1 {
   width: 120px;
   height: 120px;
   transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg); /* IE 9 */
+  -webkit-transform: rotate(-45deg); /* Chrome, Safari, Opera */
   border-top: 6px solid #ff6a15;
   border-bottom: 6px solid #cb4e53;
   background-image: linear-gradient(#ff6a15, #cb4e53), linear-gradient(#ff6a15, #cb4e53);
@@ -928,6 +958,8 @@ h1 {
 }
 #experience .year .cadre .text {
   transform: rotate(45deg);
+  -ms-transform: rotate(45deg); /* IE 9 */
+  -webkit-transform: rotate(45deg); /* Chrome, Safari, Opera */
   height: 100%;
   width: 100%;
   margin-top: 17px;
